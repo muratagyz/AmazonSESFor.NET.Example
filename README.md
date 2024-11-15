@@ -1,2 +1,1 @@
-![Alternatif Metin]()
-<img src="[https://github.com/yusufkorucu/VehicleApp/raw/master/Screenshot%202024-09-04%20at%2019.03.51.png](https://github.com/kullaniciAdi/repositoryAdi/raw/main/images/resimAdi.png](https://github.com/muratagyz/AmazonSESFor.NET.Example/blob/master/AmazonSESFor.NET.Example/Example/example.png](https://raw.githubusercontent.com/muratagyz/AmazonSESFor.NET.Example/refs/heads/master/AmazonSESFor.NET.Example/Example/example.png?token=GHSAT0AAAAAACCZSMQBFCMWZSPU4ZTZFVLKZZX3MOQ)" style="max-width: 100%;">
+![image](https://raw.githubusercontent.com/muratagyz/AmazonSESFor.NET.Example/refs/heads/master/AmazonSESFor.NET.Example/Example/example.png?token=GHSAT0AAAAAACCZSMQBFCMWZSPU4ZTZFVLKZZX3MOQ)
