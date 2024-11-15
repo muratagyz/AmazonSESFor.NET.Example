@@ -1,3 +1,4 @@
+using Amazon;
 using Amazon.SimpleEmail;
 using AmazonSESFor.NET.Example.Models;
 using AmazonSESFor.NET.Example.Services;
@@ -6,8 +7,11 @@ using Scalar.AspNetCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDefaultAWSOptions(builder.Configuration.GetAWSOptions());
-builder.Services.AddAWSService<IAmazonSimpleEmailService>();
+builder.Services.AddSingleton<AmazonSimpleEmailServiceClient>(x =>
+{
+    return new AmazonSimpleEmailServiceClient(builder.Configuration["AwsMailSettings:AccessKeyId"], builder.Configuration["AwsMailSettings:SecretAccessKey"], region: RegionEndpoint.EUWest2);
+});
+
 builder.Services.AddSingleton<IMailService, AmazonSESService>();
 
 builder.Services.AddControllers();
@@ -23,7 +27,7 @@ if (app.Environment.IsDevelopment())
     app.MapScalarApiReference();
 }
 
-app.MapPost("/send-mail", async (MailRequestModel mailRequest, IMailService sesService)
+app.MapPost("/SendMail", async (MailRequestModel mailRequest, IMailService sesService)
     => await sesService.SendEmailAsync(mailRequest));
 
 app.Run();

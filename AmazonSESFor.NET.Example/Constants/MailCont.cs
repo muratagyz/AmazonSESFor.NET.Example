@@ -2,7 +2,12 @@
 {
     public static class MailCont
     {
-        public const string SuccessMesageResponse = "Mail successfully sent";
-        public const string ErrorMesageResponse = "Mail sending failed";
+        public static string ResponseMesageSuccess = "Mail successfully sent. Message Id : {0}";
+        public const string ResponseMesageError = "Mail sending failed";
+
+        public static string GetResponseMessageSuccess(string messageId)
+        {
+            return string.Format(ResponseMesageSuccess, messageId);
+        }
     }
 }
