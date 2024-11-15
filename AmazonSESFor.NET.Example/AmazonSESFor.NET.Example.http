@@ -1,0 +1,6 @@
+@AmazonSESFor.NET.Example_HostAddress = http://localhost:5099
+
+GET {{AmazonSESFor.NET.Example_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
