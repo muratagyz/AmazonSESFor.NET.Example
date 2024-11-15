@@ -1,0 +1,1 @@
+![Alternatif Metin](https://github.com/kullaniciAdi/repositoryAdi/raw/main/images/resimAdi.png](https://github.com/muratagyz/AmazonSESFor.NET.Example/blob/master/AmazonSESFor.NET.Example/Example/example.png)
